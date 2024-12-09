@@ -47,7 +47,7 @@ jobs:
         run: docker build -t node-app .
 
       - name: Tag Docker image
-        run: docker push node-app
+        run: docker tag node-app:latest shivangsingh/dockerhub:node-app
 
       - name: Push Docker Image
         run: docker push shivangsingh/dockerhub:node-app
