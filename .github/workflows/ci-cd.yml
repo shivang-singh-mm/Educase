@@ -35,7 +35,7 @@ jobs:
   # Step 2: Build and Push Docker Image
   build-and-push:
     needs: test
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
